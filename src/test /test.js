@@ -1,29 +1,34 @@
-import {
-  Personality, Bowerman, Swordsman, Magician, Daemon, Undead, Zombie,
-} from '../index';
+import Daemon from '../class/Daemon';
+import Zombie from '../class/Zombie';
+import Bowerman from '../class/bowerman';
+import Undead from '../class/Undead';
+import Magician from '../class/Magician';
+import Swordsman from '../class/Swordsman';
 
 describe('test use heroies', () => {
   describe('peronality test default', () => {
     it('name and type return default heroies', () => {
-      const pers = new Personality('igor', Daemon);
+      const pers = new Daemon('igor', 'Daemon');
       expect(pers.name).toBe('igor');
-      expect(pers.type).toBe(Daemon);
+      expect(pers.type).toBe('Daemon');
       expect(pers.level).toBe(1);
       expect(pers.health).toBe(100);
     });
 
     it('name < 2 symbol or name > 10 symbol', () => {
-      expect(() => new Personality('', Bowerman)).toThrow('Имя должно быть строкой от 2 до 10 символов');
-      expect(() => new Personality(123, Swordsman)).toThrow('Имя должно быть строкой от 2 до 10 символов');
-      expect(() => new Personality('gamburger-bilder-big', Magician)).toThrow('Имя должно быть строкой от 2 до 10 символов');
-      expect(() => new Personality('a', Undead)).toThrow('Имя должно быть строкой от 2 до 10 символов');
-      expect(() => new Personality('-', Zombie)).toThrow('Имя должно быть строкой от 2 до 10 символов');
+      expect(() => new Daemon('', 'Bowerman')).toThrow('Имя должно быть строкой от 2 до 10 символов');
+      expect(() => new Daemon(123, 'Swordsman')).toThrow('Имя должно быть строкой от 2 до 10 символов');
+      expect(() => new Daemon('gamburger-bilder-big', 'Magician')).toThrow('Имя должно быть строкой от 2 до 10 символов');
+      expect(() => new Daemon('a', 'Undead')).toThrow('Имя должно быть строкой от 2 до 10 символов');
+      expect(() => new Daemon('-', 'Zombie')).toThrow('Имя должно быть строкой от 2 до 10 символов');
     });
   });
 
   describe('Bowerman class', () => {
     it('should create a new Bowerman instance', () => {
       const bow = new Bowerman('Bowerman1');
+      bow.attack = 25;
+      bow.defence = 25;
       expect(bow.name).toBe('Bowerman1');
       expect(bow.type).toBe('Bowerman');
       expect(bow.health).toBe(100);
@@ -35,6 +40,8 @@ describe('test use heroies', () => {
   describe('Swordsman class', () => {
     it('should create a new Swordsman instance', () => {
       const swor = new Swordsman('Swordsman1');
+      swor.attack = 40;
+      swor.defence = 10;
       expect(swor.name).toBe('Swordsman1');
       expect(swor.type).toBe('Swordsman');
       expect(swor.health).toBe(100);
@@ -47,6 +54,8 @@ describe('test use heroies', () => {
   describe('Magician class', () => {
     it('should create a new Magician instance', () => {
       const magi = new Magician('Magician1');
+      magi.attack = 10;
+      magi.defence = 40;
       expect(magi.name).toBe('Magician1');
       expect(magi.type).toBe('Magician');
       expect(magi.health).toBe(100);
@@ -59,6 +68,8 @@ describe('test use heroies', () => {
   describe('Daemon class', () => {
     it('should create a new Daemon instance', () => {
       const dae = new Daemon('Daemon1');
+      dae.attack = 10;
+      dae.defence = 40;
       expect(dae.name).toBe('Daemon1');
       expect(dae.type).toBe('Daemon');
       expect(dae.health).toBe(100);
@@ -71,6 +82,8 @@ describe('test use heroies', () => {
   describe('Undead class', () => {
     it('should create a new Undead instance', () => {
       const undead = new Undead('Undead1');
+      undead.attack = 25;
+      undead.defence = 25;
       expect(undead.name).toBe('Undead1');
       expect(undead.type).toBe('Undead');
       expect(undead.health).toBe(100);
@@ -83,6 +96,8 @@ describe('test use heroies', () => {
   describe('Zombie class', () => {
     it('should create a new Zombie instance', () => {
       const zombie = new Zombie('Zombie1');
+      zombie.attack = 25;
+      zombie.defence = 25;
       expect(zombie.name).toBe('Zombie1');
       expect(zombie.type).toBe('Zombie');
       expect(zombie.health).toBe(100);
