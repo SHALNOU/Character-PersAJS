@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1690639072560" clover="3.2.0">
-  <project timestamp="1690639072560" name="All files">
+<coverage generated="1690901744983" clover="3.2.0">
+  <project timestamp="1690901744984" name="All files">
     <metrics statements="41" coveredstatements="41" conditionals="23" coveredconditionals="23" methods="9" coveredmethods="9" elements="73" coveredelements="73" complexity="0" loc="41" ncloc="41" packages="1" files="7" classes="7"/>
-    <file name="Daemon.js" path="/Users/macbookair/Desktop/Character-PersAJS/src/class/Daemon.js">
+    <file name="Daemon.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/class/Daemon.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="5" count="5" type="stmt"/>
       <line num="6" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>
     </file>
-    <file name="Magician.js" path="/Users/macbookair/Desktop/Character-PersAJS/src/class/Magician.js">
+    <file name="Magician.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/class/Magician.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="5" count="2" type="stmt"/>
       <line num="6" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>
     </file>
-    <file name="Swordsman.js" path="/Users/macbookair/Desktop/Character-PersAJS/src/class/Swordsman.js">
+    <file name="Swordsman.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/class/Swordsman.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="5" count="7" type="stmt"/>
       <line num="6" count="7" type="stmt"/>
       <line num="7" count="7" type="stmt"/>
     </file>
-    <file name="Undead.js" path="/Users/macbookair/Desktop/Character-PersAJS/src/class/Undead.js">
+    <file name="Undead.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/class/Undead.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="5" count="2" type="stmt"/>
       <line num="6" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>
     </file>
-    <file name="Zombie.js" path="/Users/macbookair/Desktop/Character-PersAJS/src/class/Zombie.js">
+    <file name="Zombie.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/class/Zombie.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="5" count="2" type="stmt"/>
       <line num="6" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>
     </file>
-    <file name="bowerman.js" path="/Users/macbookair/Desktop/Character-PersAJS/src/class/bowerman.js">
+    <file name="bowerman.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/class/bowerman.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="5" count="2" type="stmt"/>
       <line num="6" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>
     </file>
-    <file name="personality.js" path="/Users/macbookair/Desktop/Character-PersAJS/src/class/personality.js">
+    <file name="personality.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/class/personality.js">
       <metrics statements="23" coveredstatements="23" conditionals="17" coveredconditionals="17" methods="3" coveredmethods="3"/>
       <line num="1" count="7" type="stmt"/>
       <line num="5" count="20" type="cond" truecount="5" falsecount="0"/>
