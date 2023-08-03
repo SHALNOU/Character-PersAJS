@@ -1,6 +1,4 @@
-import Personality from './personality';
-import CopyOrderObject from '../object/CopyOrderObject';
-
+import Personality from "./personality";
 
 export default class Swordsman extends Personality {
 	constructor(name, type = 'Swordsman') {
@@ -9,5 +7,4 @@ export default class Swordsman extends Personality {
 		this.defence = 10;
 	}
 }
-
 

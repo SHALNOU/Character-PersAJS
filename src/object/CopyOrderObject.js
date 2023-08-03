@@ -1,4 +1,6 @@
-function CopyOrderObject(obj, Array) {
+
+
+export default function CopyOrderObject(obj, Array) {
 	const probs = [];
 	const notProbs = [];
 
@@ -20,4 +22,3 @@ function CopyOrderObject(obj, Array) {
 }
 
 
-export default CopyOrderObject;
