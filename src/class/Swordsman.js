@@ -1,4 +1,4 @@
-import Personality from "./personality";
+import Personality from './personality.js';
 
 export default class Swordsman extends Personality {
 	constructor(name, type = 'Swordsman') {
@@ -7,4 +7,3 @@ export default class Swordsman extends Personality {
 		this.defence = 10;
 	}
 }
-
