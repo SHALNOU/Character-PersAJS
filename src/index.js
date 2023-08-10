@@ -40,17 +40,16 @@ const character = {
 let extractedAttacks = extractAttacks(character);
 console.log(extractedAttacks);
 
-
-const validatorUserName1 = new Validator("my_valid_username", "Bowerman");
+const validatorUserName1 = new Validator("my_valid", "Bowerman");
 const validatorUserName2 = new Validator("user123_", "Magician");
-const validatorUserName3 = new Validator("invalid-123", "Zombie");
-const validatorUserName4 = new Validator("valid_user_42", "Undead");
+const validatorUserName3 = new Validator("alid-123", "Zombie");
+const validatorUserName4 = new Validator("valid", "Undead");
 
 const validators = [validatorUserName1, validatorUserName2, validatorUserName3, validatorUserName4];
 
 for (const validator of validators) {
 	try {
-		const isValid = validator.validateUsername();
+		const isValid = validator.validateUserName();
 		console.log(`Имя "${validator.name}" валидное: ${isValid}`);
 	} catch (error) {
 		console.error(`Ошибка при проверке имени "${validator.name}": ${error.message}`);

@@ -1,5 +1,5 @@
 
-import Personality from "./personality";
+import Personality from "./personality.js";
 
 export default class Validator extends Personality {
 
