@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1691682714888" clover="3.2.0">
-  <project timestamp="1691682714888" name="All files">
-    <metrics statements="57" coveredstatements="57" conditionals="27" coveredconditionals="26" methods="14" coveredmethods="14" elements="98" coveredelements="97" complexity="0" loc="57" ncloc="57" packages="3" files="9" classes="9"/>
+<coverage generated="1691749936227" clover="3.2.0">
+  <project timestamp="1691749936228" name="All files">
+    <metrics statements="60" coveredstatements="60" conditionals="27" coveredconditionals="27" methods="15" coveredmethods="15" elements="102" coveredelements="102" complexity="0" loc="60" ncloc="60" packages="4" files="10" classes="10"/>
     <package name="Destructuring">
-      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="Destructuring.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/Destructuring/Destructuring.js">
-        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
@@ -76,6 +76,15 @@
         <line num="40" count="2" type="stmt"/>
         <line num="42" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="43" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="newFunctionNumber">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="newFunctionNumber.js" path="/Users/macbookair/Desktop/neotologia/Character-PersAJS/src/newFunctionNumber/newFunctionNumber.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
       </file>
     </package>
     <package name="object">

@@ -1,45 +1,38 @@
 import extractAttacks from '../Destructuring/Destructuring';
 
-test('test Destructuring default pers', () => {
-  const character = {
-    name: 'Лучник',
-    type: 'Bowman',
-    health: 50,
-    level: 3,
-    attack: 40,
-    defence: 10,
-    special: [
-      {
-        id: 8,
-        name: 'Двойной выстрел',
-        icon: 'http://...',
-        description: 'Двойной выстрел наносит двойной урон',
-      },
-      {
-        id: 9,
-        name: 'Нокаутирующий удар',
-        description: 'Описание недоступно',
-        icon: 'http://...',
-      },
-    ],
-  };
+describe('extractAttacks', () => {
+	it('should extract and format attacks correctly', () => {
+		const character = {
+			special: [
+				{
+					id: 1,
+					name: 'Attack 1',
+					description: 'Description 1',
+					icon: 'icon1.png',
+				},
+				{
+					id: 2,
+					name: 'Attack 2',
+					icon: 'icon2.png',
+				},
+			],
+		};
 
-  const result = [
-    {
-      id: 8,
-      name: 'Двойной выстрел',
-      description: 'Двойной выстрел наносит двойной урон',
-      icon: 'http://...',
-    },
-    {
-      id: 9,
-      name: 'Нокаутирующий удар',
-      description: 'Описание недоступно',
-      icon: 'http://...',
-    },
-  ];
+		const result = extractAttacks(character);
 
-  const extractedAttacks = extractAttacks(character);
-
-  expect(extractedAttacks).toEqual(result);
+		expect(result).toEqual([
+			{
+				id: 1,
+				name: 'Attack 1',
+				description: 'Description 1',
+				icon: 'icon1.png',
+			},
+			{
+				id: 2,
+				name: 'Attack 2',
+				description: 'Описание недоступно', // Ожидаемое значение для описания, если отсутствует
+				icon: 'icon2.png',
+			},
+		]);
+	});
 });
